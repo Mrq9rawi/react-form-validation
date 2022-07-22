@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-form-validation/static/css/main.4a6b1b45.css",
+    "main.js": "/react-form-validation/static/js/main.c4e74546.js",
+    "static/media/fa-solid-900.ttf": "/react-form-validation/static/media/fa-solid-900.56f958545ad7789238b6.ttf",
+    "static/media/fa-brands-400.ttf": "/react-form-validation/static/media/fa-brands-400.6d60cc0a73061e1e6aad.ttf",
+    "static/media/fa-solid-900.woff2": "/react-form-validation/static/media/fa-solid-900.a66b80c86247807d0747.woff2",
+    "static/media/fa-brands-400.woff2": "/react-form-validation/static/media/fa-brands-400.d483dc55a91d0261f6ef.woff2",
+    "static/media/fa-regular-400.ttf": "/react-form-validation/static/media/fa-regular-400.abc1663def2f25b507c3.ttf",
+    "static/media/fa-regular-400.woff2": "/react-form-validation/static/media/fa-regular-400.8014bbf002ecb7a33b8f.woff2",
+    "index.html": "/react-form-validation/index.html",
+    "main.4a6b1b45.css.map": "/react-form-validation/static/css/main.4a6b1b45.css.map",
+    "main.c4e74546.js.map": "/react-form-validation/static/js/main.c4e74546.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a6b1b45.css",
+    "static/js/main.c4e74546.js"
+  ]
+}
