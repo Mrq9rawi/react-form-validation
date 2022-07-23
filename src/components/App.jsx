@@ -74,10 +74,26 @@ export default function App() {
 			});
 			userNameRef.current.focus();
 		} else {
-			formData.confirmPassword === ""
-				? (confirmPasswordDivStatus = "error")
-				: (confirmPasswordDivStatus = "");
+			if (formData.confirmPassword === "") {
+				changeStateOnSubmission(confirmPasswordDivStatus, "confirmPassword");
+			}
+			if (formData.userName === "") {
+				changeStateOnSubmission(userNameDivStatus, "userName");
+			}
+			if (formData.password === "") {
+				changeStateOnSubmission(passwordDivStatus, "password");
+			}
 		}
+	}
+
+	function changeStateOnSubmission(targetDiv, targetData) {
+		targetDiv = "error";
+		setFormData((prevData) => {
+			return {
+				...prevData,
+				[targetData]: " ",
+			};
+		});
 	}
 
 	return (
@@ -104,7 +120,7 @@ export default function App() {
 						placeholder="user123"
 						onChange={handelChange}
 						name="userName"
-						value={formData.userName}
+						value={formData.userName.trim()}
 					/>
 					<span className="fas fa-check-circle"></span>
 					<span className="fas fa-exclamation-circle"></span>
@@ -127,7 +143,7 @@ export default function App() {
 						placeholder="Password"
 						onChange={handelChange}
 						name="password"
-						value={formData.password}
+						value={formData.password.trim()}
 					/>
 					<span className="fas fa-check-circle"></span>
 					<span className="fas fa-exclamation-circle"></span>
@@ -150,7 +166,7 @@ export default function App() {
 						placeholder="Password"
 						onChange={handelChange}
 						name="confirmPassword"
-						value={formData.confirmPassword}
+						value={formData.confirmPassword.trim()}
 					/>
 					<span className="fas fa-check-circle"></span>
 					<span className="fas fa-exclamation-circle"></span>
